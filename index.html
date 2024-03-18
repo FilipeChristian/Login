@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="estilos/Mobile.css">
     <link rel="stylesheet" href="estilos/MediaTablet.css">
     <link rel="stylesheet" href="estilos/MediaDesktop.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <main>
-        <div id="img">
-            <img src="materiais/pexels-artawkrn-16761303.jpg" alt="">
+        <div id="putSrc">
+            <!-- <img src="materiais/pexels-artawkrn-16761303.jpg" alt="Building" class="img"> -->
         </div>
-
-        <div>
+        <div class="dadosform">
             <h2>Login</h2> <br>
             
-            <p>Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p> 
+            <p class="apresentacao">Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p> 
 
             <form action="#" method="post" autocomplete="on">
-                <label for="email"> <br>
-                    icon de user
-                </label>
-                <input type="email" name="emailName" id="email"> <br>
+                <div class="divinput">
+                    <label for="email" class="faixa">
+                        <span class="material-icons-sharp">person</span>
+                    </label>
+                    <input type="email" name="emailName" id="email" placeholder="Seu email">
+                </div>
 
-                <label for="senha"><br>
-                    icon de senha
-                </label>
-                <input type="password" name="passwordName" id="senha"><br>
 
-                <input type="submit" value="Entrar"><br>
-                <input type="button" value="Esqueci a senha [Icon de email]"><br>
+                <div class="divinput">
+                    <label for="senha">
+                        icon
+                    </label>
+                    <input type="password" name="passwordName" id="senha" placeholder="Sua senha">
+                </div>
+
+                <p><input type="submit" value="Entrar"></p>
+                <input type="button" value="Esqueci a senha [Icon de email]">
             </form>
         </div>
     </main>
