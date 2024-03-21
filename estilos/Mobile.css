@@ -12,10 +12,6 @@ body,html{
    background-color: rgb(112, 51, 169);
 }
 
-::-webkit-scrollbar-button{
-    display: none;
-}
-
 #putSrc{
     background-image: url(../materiais/pexels-artawkrn-16761303.jpg);
     background-repeat: no-repeat;
