@@ -7,8 +7,13 @@
 }
 
 body,html{
-   height: 100vh; 
+   /* height: 100vh; */
+   width: 100vw; 
    background-color: rgb(112, 51, 169);
+}
+
+::-webkit-scrollbar-button{
+    display: none;
 }
 
 #putSrc{
@@ -16,7 +21,7 @@ body,html{
     background-repeat: no-repeat;
     background-size: cover;
     width: 280px;
-    height: 240px;
+    height: 220px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -24,7 +29,7 @@ main{
     position: absolute;
     background-color: white;
     width: 280px;
-    height: 550px;
+    height: 560px;
     border-radius: 20px;
     box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.32);
     left: 50%;
@@ -45,18 +50,75 @@ main h2{
 .dadosform{
     width: 270px;
     margin: auto;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .divinput{
-    background-color: blue;
-    margin-right: 30px;
-    margin-bottom:5px;
+    background-color: rgb(100, 36, 196);
+    margin-right: 10px;
+    margin-bottom:7px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.461) 0px 0px 3px 0px;
 }
 
 #email{
-    width: 180px;
-    height: 30px;
+    width: 215px;
+    height: 33px;
     border-radius: 5px;
-    border: 3px solid rgba(0, 0, 0, 0.996);
+    border: 3px solid rgb(81, 28, 161);
+    padding-left: 5px;
+}
+
+#senha{
+    width: 215px;
+    height: 33px;
+    border-radius: 5px;
+    border: 3px solid rgb(81, 28, 161);
+    padding-left: 5px;
+}
+
+#person{
+    color: white;
+    position: relative;
+    top: 7px;
+    left: 6px;
+    padding-right: 6px;
+}
+
+#person:hover{
+    transform: scale(1.1);
+}
+
+.ButtonLogar{
+    background-color: rgb(101, 172, 148);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    width: 260px;
+    height: 40px;
+    margin-bottom: 7px;
+    
+}
+
+.ButtonLogar:hover{
+    background-color: rgb(74, 126, 109);
+    color: white;
+    transition: 0.2s background-color, 0.2s color;
+}
+
+.ButtonForgot{
+    background-color: white;
+    color: rgb(92, 158, 136);
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 2px solid rgb(101, 172, 148);
+    width: 260px;
+    height: 40px;
+}
+
+.ButtonForgot:hover{
+    background-color: rgb(124, 209, 179);
+    color: rgb(65, 107, 93);
+    transition: 0.2s background-color, 0.2s color;
 }

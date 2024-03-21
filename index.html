@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="estilos/MediaDesktop.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
     <main>
@@ -23,21 +24,31 @@
             <form action="#" method="post" autocomplete="on">
                 <div class="divinput">
                     <label for="email" class="faixa">
-                        <span class="material-icons-sharp">person</span>
+                       <span class="material-symbols-outlined" id="person" onclick="semmnav()">
+                        person
+                       </span>    
+
                     </label>
-                    <input type="email" name="emailName" id="email" placeholder="Seu email">
+                    <input type="email" name="emailName" id="email" placeholder="Digite seu email" required autocomplete="email">
                 </div>
 
 
                 <div class="divinput">
                     <label for="senha">
-                        icon
+                        <span class="material-symbols-outlined" id="person" onclick="semmnav()">
+                            key
+                           </span>
                     </label>
-                    <input type="password" name="passwordName" id="senha" placeholder="Sua senha">
+                    <input type="password" name="passwordName" id="senha" placeholder="Sua senha" autocomplete="new-password" maxlength="30" minlength="8">
                 </div>
 
-                <p><input type="submit" value="Entrar"></p>
-                <input type="button" value="Esqueci a senha [Icon de email]">
+                <p>
+                    <input type="submit" value="Entrar" class="ButtonLogar">
+                </p>
+
+                <p>
+                    <input type="button" value="Esqueci a senha &#9993;" class="ButtonForgot">
+                </p>
             </form>
         </div>
     </main>
