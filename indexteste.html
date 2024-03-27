@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <style>
+
 @charset "UTF-8";
 
 *{
@@ -7,7 +19,7 @@
 }
 
 body,html{
-   height: 100vh; /**/
+   /* height: 100vh; */
    width: 100vw; 
    background-color: rgb(112, 51, 169);
 }
@@ -118,3 +130,50 @@ main h2{
     color: rgb(65, 107, 93);
     transition: 0.2s background-color, 0.2s color;
 }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div id="putSrc">
+            
+        </div>
+        <div class="dadosform">
+            <h2>Login</h2> <br>
+            
+            <p class="apresentacao">Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p> 
+
+            <form action="#" method="post" autocomplete="on">
+                <div class="divinput">
+                    <label for="email" class="faixa">
+                       <span class="material-symbols-outlined" id="person" onclick="semmnav()">
+                        person
+                       </span>    
+
+                    </label>
+                    <input type="email" name="emailName" id="email" placeholder="Digite seu email" required autocomplete="email">
+                </div>
+
+
+                <div class="divinput">
+                    <label for="senha">
+                        <span class="material-symbols-outlined" id="person" onclick="semmnav()">
+                            key
+                           </span>
+                    </label>
+                    <input type="password" name="passwordName" id="senha" placeholder="Sua senha" autocomplete="new-password" maxlength="30" minlength="8">
+                </div>
+
+                <p>
+                    <input type="submit" value="Entrar" class="ButtonLogar">
+                </p>
+
+                <p>
+                    <input type="button" value="Esqueci a senha &#9993;" class="ButtonForgot">
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
