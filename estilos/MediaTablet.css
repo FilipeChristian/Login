@@ -1,1 +1,52 @@
-@charset
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body{
+        background-image:linear-gradient(to bottom, rgb(114, 26, 149), rgb(55, 169, 141)) ;
+    }
+    
+    main{
+        width: 90vw;
+    }
+
+    #putSrc{
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .dadosform{
+        width: 70%;
+        padding: 10px;
+        float: right;
+    }
+
+    .divinput{
+        height: 50px;
+    }
+
+    #person{
+        top: 25%;
+    }
+
+    #email{
+        height: 43px;
+        width: 90%
+    }
+
+    #senha{
+        height: 43px;
+        width: 90%
+    }
+
+    .ButtonLogar{
+        width: 98%;
+        height: 44px;
+    }
+
+    .ButtonForgot{
+        width: 98%;
+        height: 44px; 
+    }
+}

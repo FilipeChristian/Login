@@ -4,21 +4,23 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body,html{
-   height: 100vh; /**/
+   height: 100vh;
    width: 100vw; 
    background-color: rgb(112, 51, 169);
+   position: relative;
 }
 
 #putSrc{
+    display: block;
     background-image: url(../materiais/pexels-artawkrn-16761303.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 280px;
     height: 220px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 main{
@@ -27,6 +29,7 @@ main{
     width: 280px;
     height: 560px;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.32);
     left: 50%;
     top: 50%;
@@ -39,11 +42,13 @@ main h2{
     font-weight: 600;
     padding-top: 10px;
 }
+
 .apresentacao{
     padding-bottom: 10px;
 }
 
 .dadosform{
+    display: block;
     width: 270px;
     margin: auto;
     padding: 10px;
@@ -52,7 +57,7 @@ main h2{
 .divinput{
     background-color: rgb(100, 36, 196);
     margin-right: 10px;
-    margin-bottom:7px;
+    margin-bottom: 7px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.461) 0px 0px 3px 0px;
 }

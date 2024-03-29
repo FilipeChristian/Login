@@ -11,8 +11,8 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
-<body>
-    <main>
+<body onresize="change()">
+    <main class="trans">
         <div id="putSrc">
             
         </div>
@@ -53,5 +53,24 @@
             </form>
         </div>
     </main>
+
+    <script>
+
+        function change(){
+            var element = document.querySelector('main.trans')
+            var element2 = document.querySelector('#putSrc')
+            var element3 = document.querySelector('.dadosform')
+
+            if(window.innerWidth < 768){
+                element.style.transition = '0.3s'
+
+                element2.style.transition = '0.5s'
+
+                element3.style.transition = '0.1s'
+            }
+        }
+
+    </script>
+
 </body>
 </html>
