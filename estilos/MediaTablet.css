@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px){
 
     body{
-        background-image:linear-gradient(to bottom, rgb(114, 26, 149), rgb(55, 169, 141)) ;
+        background-image:linear-gradient(to bottom, rgb(114, 26, 149), rgb(55, 169, 141));
     }
     
     main{
@@ -14,6 +14,7 @@
         width: 30%;
         height: 100%;
         float: left;
+        background-position: center;
     }
 
     .dadosform{
@@ -49,4 +50,34 @@
         width: 98%;
         height: 44px; 
     }
+} 
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image:linear-gradient(to bottom, rgb(114, 26, 149), rgb(55, 169, 141));
+    }
+    
+    main{
+        width: 960px;
+    }
+
+    #putSrc{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    .dadosform{
+        float: left;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
+    
+    .apresentacao{
+        font-size: 1.2em;
+    }
+
 }
