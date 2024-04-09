@@ -52,7 +52,7 @@
     }
 } 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 993px){
 
     body{
         background-image:linear-gradient(to bottom, rgb(114, 26, 149), rgb(55, 169, 141));
@@ -70,6 +70,7 @@
 
     .dadosform{
         float: left;
+        width: 100%;
     }
 
     main h2{

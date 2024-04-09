@@ -77,7 +77,7 @@ input#email{
 }
 
 input#senha{
-    width: 85%;
+    width: calc(100% - 15%);
     height: 100%;
     border-radius: 5px;
     border: 3px solid rgb(81, 28, 161);
@@ -87,9 +87,9 @@ input#senha{
 span#person{
     color: white;
     position: relative;
-    /* top: 7px;
-    left: 6px; */
-    /* padding-right: 6px; */
+    top: 7px;
+    left: 6px;
+    padding-right: 6px;
 }
 
 #person:hover{
