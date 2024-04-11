@@ -33,8 +33,8 @@ main{
     box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.32);
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 main h2{
@@ -59,37 +59,36 @@ main h2{
 
 .divinput{
     background-color: rgb(100, 36, 196);
-    /* margin-right: 10px; */
     display: block;  /*div já é um block*/
     margin-bottom: 7px;
     width: 100%;
     height: 40px;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.461) 0px 0px 3px 0px;
 }
 
-input#email{
-    width: 85%;
+input.mailEsenha{
+    background-color: aqua;
+    width: calc(100% - 44.5px);
     height: 100%;
-    border-radius: 5px;
-    border: 3px solid rgb(81, 28, 161);
-    padding-left: 5px;
+    font-size: 1em;
+    border: 2px solid rgb(100, 36, 196);
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
 }
 
-input#senha{
-    width: calc(100% - 15%);
-    height: 100%;
-    border-radius: 5px;
-    border: 3px solid rgb(81, 28, 161);
-    padding-left: 5px;
+input.mailEsenha:focus-within{
+    background-color: white;
+    transition: 0.2s;
 }
 
 span#person{
     color: white;
-    position: relative;
-    top: 7px;
-    left: 6px;
-    padding-right: 6px;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 #person:hover{
@@ -110,7 +109,7 @@ span#person{
 
 .ButtonLogar:hover{
     background-color: #367876;
-    transition: 0.1s background-color;
+    transition: 0.1s;
 }
 
 .ButtonForgot{
